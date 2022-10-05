@@ -1,0 +1,73 @@
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    border-color: #87A2FB;
+}
+
+h1, h2, h3, h4{
+    color: #E38B29;
+}
+
+body{
+    background-color: #6F38C5;
+    color: #ADDDD0;
+}
+
+strong{
+    color: #5CB8E4;
+}
+
+a {
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+/* -------------------- Class Selector -------------------- */
+.buttonImage{
+    width: 20px;
+    height: 20px;
+    background-color: #6F38C5;
+}
+
+.slideRight{
+    animation: 1.5s slideInLeft;
+}
+
+.slideLeft{
+    animation: 1.5s slideInRight;
+}
+
+/* -------------------- Pseudo Class Selector -------------------- */
+a:hover{
+    background-color: #E38B29;
+    font-size: 18px;
+}
+
+h1 a:hover{
+    background-color: #E38B29;
+    font-size: 36px;
+}
+
+a:hover img{
+    transform: scale(2);
+}
+
+/* -------------------- Keyframes -------------------- */
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
